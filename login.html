@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightPost - Войти</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="Логотип LightPost"></a>
+                <h1><a href="index.html">LightPost</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Заказать доставку</a></li>
+                    <li><a href="track.html">Отследить посылку</a></li>
+                    <li><a href="login.html" style="color:rgb(169, 255, 218);"><i><b>Войти</i></b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="container">
+                <h2 id="formTitle">Войти в аккаунт</h2>
+                <form id="loginForm">
+                    <div>
+                        <label for="login">Логин (почта или номер телефона):</label>
+                        <input type="text" id="login" name="login" required>
+                    </div>
+                    <div id="passwordField">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" value="Войти">
+                        <button id="forgotPassword" type="button">Не помню пароль</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <p class="privacy-policy">Авторизируясь, вы даёте согласие на обработку персональных данных в соответствии с <a href="privacy.html">Политикой обработки данных</a></p>
+    
+        <section class="image-grid">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="img/image1.jpg" alt="Изображение 1">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="img/image2.jpg" alt="Изображение 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="img/image3.jpg" alt="Изображение 3">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="img/image4.jpg" alt="Изображение 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="love-note">Стараемся для Вас, Вы любимые клиенты LightPost ❤️</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LightPost. Все права защищены.</p>
+            <p>Email: LightPost@mail.ru</p>
+            <p>Телефон: +79990009999</p>
+        </div>
+    </footer>
+
+    <a href="#" id="topBtn" title="Наверх">⬆</a>
+</body>
+<script src="js/scrollToTop.js"></script>
+<script src="js/login.js"></script>
+</html>

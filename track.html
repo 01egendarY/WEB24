@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightPost - Отследить посылку</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/track.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="Логотип LightPost"></a>
+                <h1><a href="index.html">LightPost</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Заказать доставку</a></li>
+                    <li><a href="track.html" style="color:rgb(169, 255, 218);"><i><b>Отследить посылку</i></b></a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="track-container">
+            <div class="image-sidel">
+                <img src="img/sidel-image.jpg" alt="Изображение слева">
+            </div>
+            <section class="track-parcel">
+                <div class="container">
+                    <h2>Отследить посылку</h2>
+                    <div class="form-wrapper">
+                        <form id="trackForm">
+                            <div>
+                                <label for="trackingNumber">Номер заказа:</label>
+                                <input type="text" id="trackingNumber" name="trackingNumber" required>
+                            </div>
+                            <input type="submit" value="Отследить" class="green-button"> 
+                        </form>
+                        <div id="trackingResult"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="image-sider">
+                <img src="img/sider-image.jpg" alt="Изображение справа">
+            </div>
+        </section>
+
+        <section class="documents">
+            <div class="container">
+                <h2>Документы для получения заказа</h2>
+                <div class="accordion">
+                    <div class="accordion-buttons">
+                        <button class="accordion-button" data-target="physical">Физическим лицам</button>
+                        <button class="accordion-button" data-target="legal">Юридическим лицам</button>
+                        <button class="accordion-button" data-target="eaec">В странах ЕАЭС для иностранных граждан</button>
+                        <button class="accordion-button" data-target="kazakhstan">В Казахстане для граждан Казахстана</button>
+                        <button class="accordion-button" data-target="belarus">В Беларуси для граждан Беларуси</button>
+                    </div>
+                    <div class="accordion-content" id="accordion-content">
+                        <!-- Контент для физических лиц по умолчанию -->
+                        <ul>
+                            <li>➤ Паспорт гражданина РФ</li>
+                            <li>➤ Удостоверение личности военнослужащего РФ</li>
+                            <li>➤ Военный билет солдата, матроса, сержанта, старшины, прапорщика, мичмана и офицера запаса</li>
+                            <li>➤ Временное удостоверение личности гражданина РФ (форма N 2П)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LightPost. Все права защищены.</p>
+            <p>Email: LightPost@mail.ru</p>
+            <p>Телефон: +79990009999</p>
+        </div>
+    </footer>
+
+    <a href="#" id="topBtn" title="Наверх">⬆</a>
+
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/tracking.js"></script>
+    <script src="js/documents.js"></script>
+</body>
+</html>

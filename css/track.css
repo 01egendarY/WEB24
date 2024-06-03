@@ -1,0 +1,129 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-sidel, .image-sider {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Скрыть части изображения, выходящие за пределы контейнера */
+  border-radius: 10px;
+}
+
+.image-sidel img, .image-sider img {
+  width: 100%;
+  max-width: 450px; /* Максимальная ширина изображения */
+  height: auto;
+}
+
+.image-sidel img {
+  max-width: 250px;
+}
+
+.track-parcel,
+.documents {
+  padding: 3rem;
+}
+
+.track-parcel {
+  padding: 0.2rem;
+}
+
+.track-parcel h2,
+.documents h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#trackForm {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+#trackingNumber {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#trackForm input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#trackForm input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#trackingResult {
+  text-align: center;
+  margin-top: 1rem;
+  display: none;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.accordion-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.accordion-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-button.active,
+.accordion-button:hover {
+  background-color: #1c814d;
+}
+
+.accordion-content {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.documents ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.documents ul li {
+  margin-bottom: 0.5rem;
+}

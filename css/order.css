@@ -1,0 +1,113 @@
+.delivery-calc {
+  background-color: #f4f4f4;
+  padding: 3rem 15%;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  max-width: 70%;
+  width: 100vb;
+  margin-top: 15px;
+}
+
+.delivery-calc .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.delivery-calc h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.delivery-calc form div {
+  margin-bottom: 1rem;
+}
+
+.delivery-calc label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.delivery-calc input,
+.delivery-calc select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.delivery-calc input {
+  width: 97.5%;
+}
+
+.delivery-calc input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.delivery-calc input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#calculationResult {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e7f3e7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#pickupPoints {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e7f3e7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.delivery-info {
+  padding: 3rem 15%;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 100vb;
+  text-align: justify;
+
+}
+
+
+.delivery-info .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.delivery-info h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.delivery-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.delivery-info ul li {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

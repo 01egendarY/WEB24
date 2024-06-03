@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<!-- Разработка веб-сайта сервиса по доставке посылок -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightPost - Доставка посылок</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+</head> 
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="Логотип LightPost"></a>
+                <h1><a href="index.html">LightPost</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="color:rgb(169, 255, 218);"><i><b>Главная</b></i></a></li>
+                    <li><a href="order.html">Заказать доставку</a></li>
+                    <li><a href="track.html">Отследить посылку</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banner-slider">
+            <div class="slider-container">
+                <div class="banner">
+                    <div class="banner-content">
+                        <h3>Скидка 15% на первую отправку для новых пользователей</h3>
+                        <p>Необходимо зарегистрироваться на платформе и подтвердить аккаунт</p>
+                    </div>
+                    <div class="banner-image">
+                        <img src="img/banner1.jpg" alt="Banner 1">
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner-content">
+                        <h3>Кэшбэк 10% для заказа на сумму от 2000 рублей</h3>
+                        <p>Необходимо авторизоваться на платформе</p>
+                    </div>
+                    <div class="banner-image">
+                        <img src="img/banner2.jpg" alt="Banner 2">
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner-content">
+                        <h3>Открыта вакансия на должность курьера в городе Москва</h3>
+                    </div>
+                    <div class="banner-image">
+                        <img src="img/banner3.jpg" alt="Banner 3">
+                    </div>
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </section>
+
+        <section class="hero">
+            <div class="container">
+                <h2>Быстрая и надежная доставка посылок</h2>
+                <p>Отправляйте и отслеживайте ваши посылки с LightPost</p>
+                <a href="order.html" class="btn">Заказать доставку</a>
+                <a href="track.html" class="btn track-btn">Отследить посылку</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Наши преимущества</h2>
+                <ul>
+                    <li>Быстрая доставка</li>
+                    <li>Доступные цены</li>
+                    <li>Гарантия безопасности</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <h2>Новости</h2>
+                <div class="news-item">
+                    <h3>20 мая 2024г - Остерегайтесь мошенников!</h3>
+                    <p>Предостерегаем всех наших клиентов от мошенников, действующих от нашего имени.</p>
+                </div>
+                <div class="news-item">
+                    <h3>19 мая 2024г - Открытие офиса в Москве</h3>
+                    <p>Открытие нового офиса позволит нам еще более качественно обслуживать наших клиентов.</p>
+                </div>
+                <div class="news-item">
+                    <h3>18 мая 2024г - Мы открылись</h3>
+                    <p>Мы рады сообщить об открытии нашей компании.</p>
+                </div>
+            </div>
+        </section>        
+
+        <section class="contact-form">
+          <div class="container">
+              <h2>Обратная связь</h2>
+              <div class="form-container">
+                  <form id="contactForm">
+                      <div>
+                          <label for="name">Имя:</label>
+                          <input type="text" id="name" name="name" required>
+                      </div>
+                      <div>
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+                      </div>
+                      <div>
+                          <label for="message">Сообщение:</label>
+                          <textarea id="message" name="message" rows="5" required></textarea>
+                      </div>
+                      <input type="submit" value="Отправить">
+                  </form>
+                  <p id="responseMessage"></p>
+              </div>
+          </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+            <h2>Наше местоположение</h2>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/listvennichnaya_alleya_2a/Z04YcwJkQUYDQFtvfXRyc3xjYA==/?ll=37.556326%2C55.831183&utm_medium=mapframe&utm_source=maps&z=17.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Лиственничная аллея, 2А — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.556326%2C55.831183&mode=whatshere&whatshere%5Bpoint%5D=37.555049%2C55.831838&whatshere%5Bzoom%5D=17&z=17.51" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LightPost. Все права защищены.</p>
+            <p>Email: LightPost@mail.ru</p>
+            <p>Телефон: +79990009999</p>
+    </footer>
+    <a href="#" id="topBtn" title="Наверх">⬆</a>
+</body>
+<script src="js/slider.js"></script>
+<script src="js/scrollToTop.js"></script>
+<script src="js/contactForm.js"></script>
+</html> 

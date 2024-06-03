@@ -1,0 +1,131 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-section {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.login-section h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.form-actions button {
+    font-size: medium;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem; 
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 auto; /* Центрируем кнопку по горизонтали */
+
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p.privacy-policy {
+    margin-top: 1rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+p.privacy-policy a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+#forgotPassword {
+    background-color: transparent;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+#forgotPassword:hover {
+    text-decoration: underline;
+}
+
+.image-grid {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex-basis: 45%;
+}
+
+.image-container {
+    width: 100%;
+    height: 300px; /* Фиксированная высота */
+    overflow: hidden; /* Скрыть части изображения, выходящие за пределы контейнера */
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Растянуть изображение внутри контейнера */
+}
+
+.love-note {
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5em;
+}

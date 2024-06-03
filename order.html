@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightPost - Расчёт доставки</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="Логотип LightPost"></a>
+                <h1><a href="index.html">LightPost</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html" style="color:rgb(169, 255, 218);"><i><b>Заказать доставку</i></b></a></li>
+                    <li><a href="track.html">Отследить посылку</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="delivery-info">
+            <div class="container">
+                <h2>Информация о доставке</h2>
+                <p>Доставка доступна только между следующими городами: Москва, Санкт-Петербург, Севастополь, Казань, Екатеринбург, Челябинск, Новосибирск, Ростов-на-Дону, Невинномысск, Красноярск.</p>
+                <p>Если города отправления и назначения разные, то к итоговой стоимости доставки прибавляется 100 рублей.</p>
+                <p>Наша компания предлагает два типа доставки:</p>
+                <ul>
+                    <li>➤ <strong>Обычная доставка:</strong> от 4 до 10 дней, стоимость 250 рублей.</li>
+                    <li>➤ <strong>Срочная доставка:</strong> от 1 до 4 дней, стоимость 750 рублей.</li>
+                </ul>
+                <p>Стоимость доставки также зависит от веса посылки. Посылка до 10 кг стоит указанную выше цену. За каждые следующие 4 кг к стоимости добавляется 100 рублей.</p>
+                <p>Например, обычная доставка посылки весом 20 кг будет стоить 550 рублей (250 рублей + 300 рублей за дополнительные 12 кг).</p>
+            </div>
+        </section>
+
+        <section class="delivery-calc">
+            <div class="container">
+                <h2>Расчёт стоимости доставки</h2>
+                <form id="deliveryForm">
+                    <div>
+                        <label for="origin">Город отправки:</label>
+                        <select id="origin" name="origin" required>
+                            <option value="">Выберите город</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Севастополь">Севастополь</option>
+                            <option value="Казань">Казань</option>
+                            <option value="Екатеринбург">Екатеринбург</option>
+                            <option value="Челябинск">Челябинск</option>
+                            <option value="Новосибирск">Новосибирск</option>
+                            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                            <option value="Невинномысск">Невинномысск</option>
+                            <option value="Красноярск">Красноярск</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="destination">Город назначения:</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Выберите город</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Севастополь">Севастополь</option>
+                            <option value="Казань">Казань</option>
+                            <option value="Екатеринбург">Екатеринбург</option>
+                            <option value="Челябинск">Челябинск</option>
+                            <option value="Новосибирск">Новосибирск</option>
+                            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                            <option value="Невинномысск">Невинномысск</option>
+                            <option value="Красноярск">Красноярск</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="address">Адрес получения (улица, дом, квартира):</label>
+                        <input type="text" id="address" name="address" placeholder="Улица, дом, квартира" required>
+                    </div>
+                    <div>
+                        <label for="weight">Вес посылки (кг):</label>
+                        <input type="number" id="weight" name="weight" placeholder="Килограммы" required>
+                    </div>
+                    <div>
+                        <label for="deliveryType">Тип доставки:</label>
+                        <select id="deliveryType" name="deliveryType" required>
+                            <option value="regular">Обычная</option>
+                            <option value="express">Срочная</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Рассчитать">
+                </form>
+                <div id="calculationResult"></div>
+                <div id="pickupPoints"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LightPost. Все права защищены.</p>
+            <p>Email: LightPost@mail.ru</p>
+            <p>Телефон: +79990009999</p>
+        </div>
+    </footer>
+
+    <a href="#" id="topBtn" title="Наверх">⬆</a>
+</body>
+<script src="js/scrollToTop.js"></script>
+<script src="js/deliveryCalculator.js"></script>
+</html>
